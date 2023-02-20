@@ -7,17 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login UI Using Flexbox</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <div class="login-container">
-            <h1>Sign In</h1>
-            <input class="input-field" placeholder="username" type="text" />
-            <input class="input-field" placeholder="password" type="password" />
-            <button type="submit" id="submit-button">Sign In</button>
+            <h1>Login</h1>
+            <div class="row input-row">
+                <span class="material-symbols-outlined icon">person</span>
+                <input class="input-field" placeholder="username" type="text" />
+            </div>
+            <div class="row input-row">
+                <span class="material-symbols-outlined icon">lock</span>
+                <input class="input-field" placeholder="password" type="password" />
+            </div>
+            <div class="row">
+                <input type="checkbox" id="checkbox" />
+                <p>Remember Me?</p>
+            </div>
+
+            <button type="submit" id="submit-button">Submit</button>
+
+
+
+            <div class="row">
+                <p>Or Register:</p>
+
+            </div>
+            <div class="row">
+                <p id="register-link"><a href="#">Register</a></p>
+            </div>
+
         </div>
     </div>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#body",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x5f88,
+            shininess: 40.00,
+            waveHeight: 20.00,
+            waveSpeed: 0.5,
+            zoom: 0.65
+        })
+    </script>
 </body>
 
 </html>
