@@ -15,25 +15,26 @@
 <body id="body">
     <div class="container">
         <div class="login-container">
-            <h1>Login</h1>
+            <h1>LOGIN</h1>
             <div class="row input-row">
                 <span class="material-symbols-outlined icon">person</span>
-                <input class="input-field" placeholder="username" type="text" />
+                <input class="input-field" placeholder="Username" type="text" />
             </div>
             <div class="row input-row">
                 <span class="material-symbols-outlined icon">lock</span>
-                <input class="input-field" placeholder="password" type="password" />
+                <input class="input-field" placeholder="Password" type="password" />
             </div>
             <div class="row">
                 <input type="checkbox" id="checkbox" />
-                <p>Remember Me?</p>
+                <label for="checkbox" id="checkbox-label">Remember Me?</label>
             </div>
             <button type="submit" id="submit-button">Submit</button>
             <div class="row">
-                <p>Or Register:</p>
+                <p>Or:</p>
+                <p id="register-link"><a href="#">Register</a></p>
             </div>
             <div class="row">
-                <p id="register-link"><a href="#">Register</a></p>
+
             </div>
         </div>
     </div>
@@ -50,7 +51,7 @@
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0x5f88,
+            color: 0x3e3e3e,
             shininess: 40.00,
             waveHeight: 15.00,
             waveSpeed: 0.5,
